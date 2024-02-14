@@ -76,12 +76,28 @@ body {
   overflow: hidden;
 }
 .social-media span:hover {
-  background-color: #0788ff;
+  background-color: red;
 }
+/* .social-media span::after {
+  content: "";
+  width: 41px;
+  background: #0788ff;
+  height: 30px;
+  position: absolute;
+  bottom: -29px;
+  translate: 0 -90px;
+  transition: all 1s;
+  left: 0;
+}
+.social-media span:hover::after {
+  height: 100px;
+  translate: 0 20px;
+  z-index: 0;
+} */
 .social-media span:before {
   content: "";
   width: 41px;
-  background: red;
+  background: #0788ff;
   height: 30px;
   position: absolute;
   bottom: -29px;
