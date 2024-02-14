@@ -72,11 +72,30 @@ body {
   border-radius: 50%;
   transition: all 0.3s;
   cursor: pointer;
+  position: relative;
+  overflow: hidden;
 }
 .social-media span:hover {
   background-color: #0788ff;
 }
+.social-media span:before {
+  content: "";
+  width: 41px;
+  background: red;
+  height: 30px;
+  position: absolute;
+  bottom: -29px;
+  translate: 0 9px;
+  transition: all 1s;
+  left: 0;
+}
+.social-media span:hover:before {
+  height: 100px;
+  z-index: 0;
+}
 .social-media span svg {
   width: 20px;
   height: 20px;
+  position: relative;
+  z-index: 1;
 }
