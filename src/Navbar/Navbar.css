@@ -1,8 +1,6 @@
 .navbar {
   max-width: 1200px;
   margin: 0 auto;
-  z-index: 1;
-  position: relative;
 }
 .navbar-container {
   display: flex;
@@ -24,12 +22,9 @@
   font-size: 32px;
   line-height: 36px;
   font-weight: 600;
+  text-transform: uppercase;
 }
-.logo span {
-  font-size: 40px;
-  font-weight: 600;
-  color: #0788ff;
-}
+
 .menu ul li a {
   color: white;
   font-size: 20px;
@@ -76,8 +71,14 @@
 .menu-toggle {
   display: none;
 }
+.mobile-menu-item {
+  display: none;
+}
 @media (max-width: 768px) {
   .menu-toggle {
+    display: block;
+  }
+  .mobile-menu-item {
     display: block;
   }
   .menu {
@@ -99,6 +100,7 @@
     position: absolute;
     top: 0;
     left: 0;
+    z-index: 1;
     transition: 0.3s;
     transform: translate(0px, 0px);
   }

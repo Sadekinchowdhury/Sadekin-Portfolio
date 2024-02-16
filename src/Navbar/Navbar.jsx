@@ -54,7 +54,7 @@ const Navbar = () => {
       <div className="navbar-container">
         <div className="logo">
           <a href="#">
-            Sade<span>k</span>
+            Sade<span><a href="">K</a></span>
           </a>
         </div>
         <div className="menu">
