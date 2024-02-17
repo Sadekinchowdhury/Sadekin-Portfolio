@@ -23,25 +23,26 @@ export const Banner = () => {
               <p>Welcome to my World</p>
             </span>
             <h2>Hi, I am Sadekin</h2>
-             <div className="developr-rol">
-              <h3>I'am </h3> {" "}
-             <TypewriterComponent
-              options={{
-                strings: thirdLineTextArray,
-                autoStart: true,
-                loop: 1,
-                speed: 50,
-                delay: 300,
-                pauseFor: 500,
-                cursor: null,
-                startDelete: true,
-              }}
-            />
-             </div>
-              <p>
-              Hard work fuels the code, turning challenges into triumphs. In the realm of ReactJS, dedication is the secret sauce for exceptional development
-              </p>
-            
+            <div className="developr-rol">
+              <h3>I'am </h3>{" "}
+              <TypewriterComponent
+                options={{
+                  strings: thirdLineTextArray,
+                  autoStart: true,
+                  loop: 1,
+                  speed: 50,
+                  delay: 300,
+                  pauseFor: 500,
+                  cursor: null,
+                  startDelete: true,
+                }}
+              />
+            </div>
+            <p>
+              Hard work fuels the code, turning challenges into triumphs. In the
+              realm of ReactJS, dedication is the secret sauce for exceptional
+              development
+            </p>
           </div>
           <div className="social">
             <div className="social-media">
@@ -84,7 +85,21 @@ export const Banner = () => {
         </div>
       </div>
       <div className="banner-content img-container">
-        <img src="./../../public/image/rume-removebg-preview.png" alt="" />
+        <div className="inner-image-container">
+          <img src="./../../public/image/ruml.png" alt="" />
+          <div className="img-object-1">
+            <img src="../../public/image/wordpress.png" alt="" />
+          </div>{" "}
+          <div className="img-object-1">
+            <img src="../../public/image/javascript.png" alt="" />
+          </div>
+          <div className="img-object-1">
+            <img src="../../public/image/nextjs.png" alt="" />
+          </div>
+          <div className="img-object-1">
+            <img src="../../public/image/react.png" alt="" />
+          </div>
+        </div>
       </div>
     </div>
   );

@@ -7,9 +7,10 @@ body {
   margin: 0 auto;
   display: flex;
   justify-content: center;
+  gap: 10px;
   flex-direction: row;
   align-items: center;
-  padding: 20px;
+  padding: 100px 20px 50px;
   position: relative;
 }
 .banner-content {
@@ -22,11 +23,12 @@ body {
   color: white;
 }
 .banner-content span p {
-  font-size: 16px;
-  line-height: 17px;
+  font-size: 22px;
+  line-height: 31px;
   word-spacing: 3px;
   font-weight: 700;
   color: white;
+  margin-bottom: 10px;
 }
 .banner-content span p {
   margin-bottom: 10px;
@@ -34,8 +36,8 @@ body {
 .banner-content p {
   font-size: 20px;
   font-weight: 400;
-  line-height: 26px;
-  margin-bottom: 24px;
+  line-height: 30px;
+  margin-bottom: 40px;
   color: white;
 }
 .developr-rol {
@@ -60,7 +62,7 @@ body {
   margin: 0;
   font-size: 40px;
   font-weight: 700;
-  line-height: 40px;
+  line-height: 52px;
   color: #0788ff;
   transition: all 3s;
   margin-bottom: 25px;
@@ -68,9 +70,57 @@ body {
 .content {
   width: 100%;
 }
-.banner-content img {
-  width: 100%;
+.inner-image-container > img:first-child {
+  max-width: 466px;
+  min-height: 466px;
+  max-height: 512px;
+  display: block;
+  object-fit: cover;
+  border-radius: 50%;
 }
+.inner-image-container {
+  position: relative;
+}
+.img-object-1 img {
+  background: #fff;
+  border-radius: 25px;
+  box-shadow: 0 2px 10px rgba(14, 29, 44, 0.15);
+  height: 85px;
+  width: 100px;
+  left: 0;
+  padding: 14px;
+  position: absolute;
+  top: 19%;
+  width: 100%;
+  max-width: 90px;
+  -o-object-fit: cover;
+  object-fit: cover;
+  transition: all 0.3s;
+}
+
+.img-object-1:nth-child(2) img {
+  left: auto;
+  right: 0;
+  top: 20%;
+  animation: objectAnimation 3s linear infinite;
+}
+.img-object-1:nth-child(3) img {
+  left: auto;
+  right: 0;
+  top: auto;
+  bottom: 35px;
+}
+.img-object-1:nth-child(4) img {
+  left: 0;
+  top: auto;
+  bottom: 35px;
+}
+
+.img-object-1:first-child img,
+.img-object-1:nth-child(2) img {
+  animation: objectAnimation 3s linear infinite;
+}
+
 .banner-content {
   display: flex;
   justify-content: center;
@@ -83,7 +133,7 @@ body {
   transition: all 0.3s;
 }
 .social-media span {
-  padding: 10px;
+  padding: 16px;
   background-color: rgb(54, 53, 54);
   border-radius: 50%;
   transition: all 0.3s;
@@ -96,7 +146,7 @@ body {
 }
 .social-media span::after {
   content: "";
-  width: 41px;
+  width: 90px;
   background: #0788ff;
   height: 30px;
   position: absolute;
@@ -112,7 +162,7 @@ body {
 }
 .social-media span:before {
   content: "";
-  width: 41px;
+  width: 90px;
   background: #0788ff;
   height: 30px;
   position: absolute;
@@ -131,14 +181,35 @@ body {
   position: relative;
   z-index: 1;
 }
-
-@media (max-width: 1018px) {
+@media (max-width: 1182px) {
   .banner-content h2 {
-    font-size: 44px;
+    font-size: 50px;
+  }
+  .banner-content h3 {
+    font-size: 34px;
+  }
+}
+@media (max-width: 1018px) {
+  .banner-container {
+    flex-direction: column;
+    text-align: center;
+    gap: 40px;
+  }
+  .banner-content p {
+    margin-right: auto;
+    max-width: 80%;
+    margin-left: auto;
+  }
+  .developr-rol,
+  .social-media {
+    justify-content: center;
+  }
+  .banner-content h2 {
+    font-size: 40px;
     line-height: 55px;
   }
   .banner-content h3 {
-    font-size: 30px;
+    font-size: 28px;
     line-height: 36px;
   }
 }
@@ -189,5 +260,16 @@ body {
   .banner-content h3 {
     font-size: 25px;
     line-height: 32px;
+  }
+}
+@keyframes objectAnimation {
+  0% {
+    top: 20%;
+  }
+  50% {
+    top: 15%;
+  }
+  100% {
+    top: 20%;
   }
 }

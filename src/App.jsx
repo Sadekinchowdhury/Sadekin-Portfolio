@@ -1,4 +1,5 @@
 import './App.css'
+import Footer from './Footer/Ffooter'
 import { Home } from "./Home/Home"
 import Navbar from "./Navbar/Navbar"
 function App() {
@@ -6,6 +7,7 @@ function App() {
   <div className="sadek-portfolio-container">
    <Navbar/>
    <Home/>
+ <Footer/>
   </div>
   )
 }
