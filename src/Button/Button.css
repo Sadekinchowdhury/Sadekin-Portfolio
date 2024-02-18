@@ -1,0 +1,54 @@
+button {
+  position: relative;
+  overflow: hidden;
+}
+button a {
+  padding: 8px 16px;
+  background-color: rgb(54, 53, 54);
+  border-radius: 7px;
+  transition: all 0.3s;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  color: white;
+}
+button a:hover {
+  background-color: red;
+}
+button a::after {
+  content: "";
+  width: 200px;
+  background: #0788ff;
+  height: 30px;
+  position: absolute;
+  bottom: -29px;
+  translate: 0 -90px;
+  transition: all 1s;
+  left: 0;
+}
+button a:hover::after {
+  height: 100px;
+  translate: 0 20px;
+  z-index: 0;
+}
+button a:before {
+  content: "";
+  width: 200px;
+  background: #0788ff;
+  height: 30px;
+  position: absolute;
+  bottom: -29px;
+  translate: 0 9px;
+  transition: all 1s;
+  left: 0;
+}
+button a:hover:before {
+  height: 100px;
+  z-index: 0;
+}
+button a svg {
+  width: 20px;
+  height: 20px;
+  position: relative;
+  z-index: 1;
+}

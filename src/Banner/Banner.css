@@ -7,15 +7,13 @@ body {
   margin: 0 auto;
   display: flex;
   justify-content: center;
-  gap: 10px;
+  gap: 60px;
   flex-direction: row;
   align-items: center;
   padding: 100px 20px 50px;
   position: relative;
 }
-.banner-content {
-  flex-basis: 50%;
-}
+
 .social-media span {
   font-size: 20px;
   line-height: 20px;
@@ -51,7 +49,7 @@ body {
 .banner-content h2 {
   color: white;
   font-size: 64px;
-  font-weight: 900;
+  font-weight: 800;
   line-height: 70px;
   margin: 0;
   text-transform: uppercase;
@@ -66,14 +64,6 @@ body {
   color: #0788ff;
   transition: all 3s;
   margin-bottom: 25px;
-}
-.content {
-  width: 100%;
-}
-.banner-content {
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 .social-media {
   display: flex;
@@ -130,7 +120,6 @@ body {
   position: relative;
   z-index: 1;
 }
-
 .inner-image-container > img:first-child {
   max-width: 466px;
   min-height: 466px;
@@ -158,7 +147,6 @@ body {
   object-fit: cover;
   transition: all 0.3s;
 }
-
 .img-object-1:nth-child(2) img {
   left: auto;
   right: 0;

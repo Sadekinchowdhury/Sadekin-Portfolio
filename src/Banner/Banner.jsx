@@ -20,7 +20,7 @@ export const Banner = () => {
         <div className="content">
           <div className="typing-animation">
             <span>
-              <p>Welcome to my World</p>
+              <p>SadekinSolutions</p>
             </span>
             <h2>Hi, I am Sadekin</h2>
             <div className="developr-rol">
@@ -39,9 +39,7 @@ export const Banner = () => {
               />
             </div>
             <p>
-              Hard work fuels the code, turning challenges into triumphs. In the
-              realm of ReactJS, dedication is the secret sauce for exceptional
-              development
+            Embrace the challenges, for they mold your strength. With perseverance and passion, conquer every length
             </p>
           </div>
           <div className="social">
