@@ -6,7 +6,7 @@ export const About = () => {
     <div className="about-me">
       <div className="about-container">
         <div className="about-img">
-          <img src="../../public/image/ruml.png" />
+          <img src="../../public/image/ruml.png" alt=""/>
         </div>
         <div className="about-content">
           <span>About Me</span>

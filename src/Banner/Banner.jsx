@@ -84,7 +84,7 @@ export const Banner = () => {
       </div>
       <div className="banner-content img-container">
         <div className="inner-image-container">
-          <img src="./../../public/image/ruml.png" alt="" />
+        <img src="../../public/image/ruml.png" alt=""/>
           <div className="img-object-1">
             <img src="../../public/image/wordpress.png" alt="" />
           </div>{" "}
