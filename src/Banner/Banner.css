@@ -133,17 +133,15 @@ body {
 }
 .img-object-1 img {
   background: #fff;
-  border-radius: 25px;
+  border-radius: 17px;
   box-shadow: 0 2px 10px rgba(14, 29, 44, 0.15);
-  height: 85px;
-  width: 100px;
+  max-height: 85px;
   left: 0;
-  padding: 14px;
+  padding: 12px;
   position: absolute;
   top: 19%;
   width: 100%;
-  max-width: 90px;
-  -o-object-fit: cover;
+  max-width: 70px;
   object-fit: cover;
   transition: all 0.3s;
 }

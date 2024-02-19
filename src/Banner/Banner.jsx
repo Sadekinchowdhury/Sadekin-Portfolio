@@ -87,16 +87,16 @@ export const Banner = () => {
         <img src="https://i.postimg.cc/tgmv776q/ruml.png" alt="" />
 
           <div className="img-object-1">
-            <img src="../../public/image/wordpress.png" alt="" />
+            <img src="https://i.postimg.cc/6QG5f29g/download-1.png" alt="" />
           </div>{" "}
           <div className="img-object-1">
-            <img src="../../public/image/javascript.png" alt="" />
+            <img src="https://i.postimg.cc/LXpRkxQg/images-2.png" alt="" />
           </div>
           <div className="img-object-1">
-            <img src="../../public/image/nextjs.png" alt="" />
+            <img src="https://i.postimg.cc/Kz6T5hSr/nextjs.png" alt="" />
           </div>
           <div className="img-object-1">
-            <img src="../../public/image/react.png" alt="" />
+            <img src="https://i.postimg.cc/FRs3KVb3/react.png" alt="" />
           </div>
         </div>
       </div>
