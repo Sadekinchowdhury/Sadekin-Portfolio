@@ -82,15 +82,63 @@
   font-size: 18px;
   line-height: 18px;
 }
-/* .skill-progress:first-child {
-  background: rgb(116, 125, 255);
+
+.skills {
+  padding: 70px 20px;
 }
-.skill-progress:nth-child(2) {
-  background: rgb(189, 93, 249);
+.skills ul.skills-name {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  max-width: 500px;
+  justify-content: center;
+  margin: 0 auto;
+  padding-bottom: 70px;
 }
-.skill-progress:nth-child(3) {
-  background: rgb(144, 151, 149);
+.skills ul.skills-name li {
+  transition: all 0.3s;
 }
-.skill-progress:nth-child(4) {
-  background: rgb(59, 100, 61);
-} */
+.skills ul.skills-name li h4 {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 20px;
+  color: white;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.3s;
+}
+.skills ul.skills-name li h4.active::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  background: #0788ff;
+  bottom: -11px;
+  left: 0;
+  position: absolute;
+}
+.front-end ul,
+.back-end ul,
+.git-control-end ul {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  place-content: center;
+  gap: 24px;
+}
+.front-end ul li,
+.back-end ul li,
+.git-control-end ul li {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+.front-end > ul > li > img,
+.back-end > ul > li > img,
+.git-control-end > ul > li > img {
+  max-width: 150px;
+  max-height: 150px;
+  border-radius: 20px;
+  margin: 0 auto;
+  padding-bottom: 15px;
+}

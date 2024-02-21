@@ -3,7 +3,8 @@ import "./about.css";
 
 export const About = () => {
   return (
-    <div className="about-me">
+   <div className="about-me-container">
+     <div className="about-me">
       <div className="about-container">
         <div className="about-img">
           <img src="https://i.postimg.cc/tgmv776q/ruml.png" alt=""/>
@@ -30,5 +31,6 @@ export const About = () => {
         </div>
       </div>
     </div>
+   </div>
   );
 };

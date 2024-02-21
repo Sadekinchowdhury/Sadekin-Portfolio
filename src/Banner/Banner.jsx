@@ -84,7 +84,8 @@ export const Banner = () => {
       </div>
       <div className="banner-content img-container">
         <div className="inner-image-container">
-        <img src="https://i.postimg.cc/tgmv776q/ruml.png" alt="" />
+        {/* <img src="https://i.postimg.cc/tgmv776q/ruml.png" alt="" /> */}
+        <img src="https://i.postimg.cc/TYWCjCCr/MFP00623.jpg" alt="" />
 
           <div className="img-object-1">
             <img src="https://i.postimg.cc/6QG5f29g/download-1.png" alt="" />
