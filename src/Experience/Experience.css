@@ -1,7 +1,7 @@
 .experience {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 100px 0;
+  padding: 100px 20px;
 }
 .experience-top {
   padding-bottom: 50px;
@@ -87,4 +87,11 @@
 }
 .experience ul li.link a:hover {
   color: #0788ff;
+}
+@media (max-width: 768px) {
+  .experience ul {
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+  }
 }

@@ -1,6 +1,5 @@
 .about-me-container {
-  max-width: 100vw;
-  max-height: 100vh;
+  max-width: 100%;
   background-color: #052545;
 }
 .about-me {
@@ -17,13 +16,14 @@
   flex-basis: 40%;
   position: relative;
   padding: 20px;
+  width: 100%;
 }
 .about-img img {
+  width: 100%;
   max-width: 400px;
   max-height: 400px;
   margin: 0 auto;
   display: block;
-  width: 100%;
   object-fit: cover;
   border-radius: 20px;
 }
@@ -75,4 +75,13 @@
   border: 1px transparent;
   color: white;
   background-color: #0788ff;
+}
+@media (max-width: 768px) {
+  .about-container {
+    flex-direction: column;
+    text-align: center;
+  }
+  .about-img {
+    flex-basis: 100%;
+  }
 }

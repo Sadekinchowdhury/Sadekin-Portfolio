@@ -1,13 +1,14 @@
 import React, { useEffect, useState } from "react";
 import "./Skills.css";
 export const Skills = () => {
+
   let [value, setValue] = useState(0);
-  let [values, setValues] = useState(0);
-  const [skillname, setSkillname] = useState("front-end");
-  const skillNamehover = (name) => {
-    setSkillname(name);
-  };
-  console.log(skillname);
+  let [jsvalue, setJsvalue] = useState(0);
+  let [cssvalue, setCssvalue] = useState(0);
+  let [reactvalue, setReactvalue] = useState(0);
+ 
+ 
+  // experienct percentage
   let progressBar = (progressValue, progressEndValue, speed, setValue) => {
     useEffect(() => {
       const progressInterval = setInterval(() => {
@@ -19,11 +20,20 @@ export const Skills = () => {
       }, speed);
     }, [progressEndValue, speed]);
   };
-  progressBar(value, 70, 200, setValue);
-  progressBar(values, 90, 200, setValues);
+  progressBar(value, 90, 100, setValue);
+  progressBar(cssvalue, 80, 100, setCssvalue);
+  progressBar(jsvalue, 81, 100, setJsvalue);
+  progressBar(reactvalue, 75, 100, setReactvalue);
+ 
+  // skills active menue
+  const [skillname, setSkillname] = useState("front-end");
+  const skillNamehover = (name) => {
+    setSkillname(name);
+  };
 
   return (
-    <div className="skills-container">
+   <div className="skills-main-container">
+     <div className="skills-container">
       <div className="skills-top">
         <h2>My Skills</h2>
         <span></span>
@@ -41,36 +51,47 @@ export const Skills = () => {
             {value}
             <span>%</span>
           </h3>
-          <h4>Javascript</h4>
+          <h4>Html</h4>
         </div>
         <div
           style={{
-            background: `conic-gradient(#991ec0 ${values * 3.6}deg, #abb1a2 ${
-              values * 3.6
+            background: `conic-gradient(#991ec0 ${cssvalue * 3.6}deg, #abb1a2 ${
+              cssvalue * 3.6
             }deg)`,
           }}
           className="skill-progress"
         >
           <h3>
-            {values}
+            {cssvalue}
             <span>%</span>
           </h3>
-          <h4>Javascript</h4>
+          <h4>Css</h4>
         </div>
-        <div className="skill-progress">
+        <div
+         style={{
+          background: `conic-gradient(#991ec0 ${jsvalue * 3.6}deg, #abb1a2 ${
+            jsvalue * 3.6
+          }deg)`,
+        }}
+        className="skill-progress">
           <h3>
-            70<span>%</span>
+            <span>{jsvalue}%</span>
           </h3>
           <h4>Javascript</h4>
         </div>
-        <div className="skill-progress">
+        <div
+         style={{
+          background: `conic-gradient(#991ec0 ${reactvalue * 3.6}deg, #abb1a2 ${
+            reactvalue * 3.6
+          }deg)`,
+        }}
+        className="skill-progress">
           <h3>
-            70<span>%</span>
+            <span>{reactvalue}%</span>
           </h3>
-          <h4>Javascript</h4>
+          <h4>Reactjs</h4>
         </div>
       </div>
-      <div className="skill-percentage"></div>
 
       <div className="skills">
         <ul className="skills-name">
@@ -94,24 +115,28 @@ export const Skills = () => {
           <div className="front-end">
             <ul>
               <li>
-              <img src="https://i.postimg.cc/LXpRkxQg/images-2.png" alt="" />
+              <img src="https://i.postimg.cc/KvPcKj07/html5-icon-15-removebg-preview.png" alt="" />
                 <p>Html</p>
               </li>
               <li>
-              <img src="https://i.postimg.cc/LXpRkxQg/images-2.png" alt="" />
-                <p>Html</p>
+              <img src="https://i.postimg.cc/FFZ5fVNF/logo-css-3-1536.png" alt="" />
+                <p>Css</p>
+              </li>
+              <li>
+              <img src="https://i.postimg.cc/44qkJGZ6/30317862-removebg-preview.png" alt="" />
+                <p>TailWind Css</p>
               </li>
               <li>
               <img src="https://i.postimg.cc/LXpRkxQg/images-2.png" alt="" />
-                <p>Html</p>
+                <p>Javascript</p>
               </li>
               <li>
-              <img src="https://i.postimg.cc/LXpRkxQg/images-2.png" alt="" />
-                <p>Html</p>
+              <img src="https://i.postimg.cc/PfLPqtGK/React-Logo-SVG-svg.png" alt="" />
+                <p>ReactJs</p>
               </li>
               <li>
-              <img src="https://i.postimg.cc/LXpRkxQg/images-2.png" alt="" />
-                <p>Html</p>
+              <img src="https://i.postimg.cc/VLK7YBX3/pngimg-com-wordpress-PNG26-removebg-preview.png" alt="" />
+                <p>Wordpress</p>
               </li>
             </ul>
           </div>
@@ -121,20 +146,35 @@ export const Skills = () => {
         {skillname === "back-end" ? (
           <div className={`back-end ${skillname === "back-end" ? "active" : ""}`}>
             <ul>
-              <li>back end</li>
-              <li></li>
-              <li></li>
+            <li>
+              <img src="https://i.postimg.cc/t44fwsZX/1-v2vdf-Kq-D4-Mtm-TSg-NP0o5cg-removebg-preview.png" alt="" />
+                <p>NodeJs</p>
+              </li>
+            <li>
+              <img src="https://i.postimg.cc/fyqwsqZ8/kisspng-web-development-node-js-socket-io-javascript-netwo-modernization-5adab8112c3fa5-529349611524.png" alt="" />
+                <p>ExpressJs</p>
+              </li>
+            <li>
+              <img src="https://i.postimg.cc/pXCGxPzq/download-7-removebg-preview.png" alt="" />
+                <p>MongoDb</p>
+              </li>
             </ul>
           </div>
         ) : (
           <></>
         )}
         {skillname === "git-control" ? (
-          <div className={`git-control ${skillname === "git-control" ? "activeskillname" : ""
+          <div className={`git-control ${skillname === "git-control" ? "active" : ""
             }`}>
             <ul>
-              <li></li>
-              <li></li>
+            <li>
+              <img src="https://i.postimg.cc/wTV69vx1/git-gui-icon-2048x2048-t4poesa1.png" alt="" />
+                <p>Git</p>
+              </li>
+            <li>
+              <img src="https://i.postimg.cc/139LBrQt/download-9-removebg-preview.png" alt="" />
+                <p>GitHub</p>
+              </li>
             </ul>
           </div>
         ) : (
@@ -142,5 +182,6 @@ export const Skills = () => {
         )}
       </div>
     </div>
+   </div>
   );
 };
