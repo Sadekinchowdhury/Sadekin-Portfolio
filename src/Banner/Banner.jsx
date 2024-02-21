@@ -39,7 +39,8 @@ export const Banner = () => {
               />
             </div>
             <p>
-            Embrace the challenges, for they mold your strength. With perseverance and passion, conquer every length
+              Embrace the challenges, for they mold your strength. With
+              perseverance and passion, conquer every length
             </p>
           </div>
           <div className="social">
@@ -74,7 +75,7 @@ export const Banner = () => {
                 </a>
               </span>
               <span>
-                <a title="Download CV" href="">
+                <a title="Download CV" href="https://github.com/Sadekinchowdhury">
                   <FaDownload />
                 </a>
               </span>
@@ -84,20 +85,12 @@ export const Banner = () => {
       </div>
       <div className="banner-content img-container">
         <div className="inner-image-container">
-        {/* <img src="https://i.postimg.cc/tgmv776q/ruml.png" alt="" /> */}
-        <img src="https://i.postimg.cc/TYWCjCCr/MFP00623.jpg" alt="" />
-
-          <div className="img-object-1">
-            <img src="https://i.postimg.cc/6QG5f29g/download-1.png" alt="" />
-          </div>{" "}
-          <div className="img-object-1">
-            <img src="https://i.postimg.cc/LXpRkxQg/images-2.png" alt="" />
-          </div>
-          <div className="img-object-1">
-            <img src="https://i.postimg.cc/Kz6T5hSr/nextjs.png" alt="" />
-          </div>
-          <div className="img-object-1">
+            <img src="https://i.postimg.cc/TYWCjCCr/MFP00623.jpg" alt="" />
+          <div className="image-object">
             <img src="https://i.postimg.cc/FRs3KVb3/react.png" alt="" />
+            <img src="https://i.postimg.cc/Kz6T5hSr/nextjs.png" alt="" />
+            <img src="https://i.postimg.cc/LXpRkxQg/images-2.png" alt="" />
+            <img src="https://i.postimg.cc/6QG5f29g/download-1.png" alt="" />
           </div>
         </div>
       </div>

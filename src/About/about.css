@@ -81,7 +81,17 @@
     flex-direction: column;
     text-align: center;
   }
+  .about-container {
+    gap: 0;
+  }
+  .about-me {
+    padding: 30px 20px;
+  }
   .about-img {
     flex-basis: 100%;
+  }
+  .about-content h2 {
+    font-size: 36px;
+    line-height: 40px;
   }
 }
