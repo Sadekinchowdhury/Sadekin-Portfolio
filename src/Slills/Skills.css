@@ -131,8 +131,6 @@
   grid-template-columns: repeat(3, 1fr);
   place-content: center;
   gap: 35px;
-  align-content: space-between;
-  min-height: 500px;
 }
 .front-end ul li,
 .back-end ul li,
@@ -274,4 +272,11 @@
     grid-template-columns: repeat(1, 1fr);
     min-height: auto;
   }
+}
+
+.active-tab {
+  display: block;
+}
+.deactive-tab {
+  display: none;
 }

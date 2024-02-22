@@ -7,7 +7,7 @@ import './Footer.css';
         <img src="https://i.postimg.cc/RhHRBCGs/1707846241239-1-removebg-preview.png" alt="" />
         <h3>Sadekin <span> Chowdhury</span></h3>
       </div>
-      <p>© 2024.All rights reserved by Rainbow-Themes.</p>
+      <p>© 2024.All rights reserved by Sadekin Chowdhury.</p>
     </div>
     </div>
   );

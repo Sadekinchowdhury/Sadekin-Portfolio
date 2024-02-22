@@ -111,8 +111,8 @@ export const Skills = () => {
             </h4>
           </li>
         </ul>
-        {skillname === "front-end" ? (
-          <div className="front-end">
+      
+          <div className={`front-end ${skillname === "front-end" ? "active-tab":'deactive-tab'}`}>
             <ul>
               <li>
               <img src="https://i.postimg.cc/KvPcKj07/html5-icon-15-removebg-preview.png" alt="" />
@@ -140,11 +140,8 @@ export const Skills = () => {
               </li>
             </ul>
           </div>
-        ) : (
-          <></>
-        )}
-        {skillname === "back-end" ? (
-          <div className={`back-end ${skillname === "back-end" ? "active" : ""}`}>
+        
+          <div className={`back-end ${skillname === "back-end" ? "active-tab" : "deactive-tab"}`}>
             <ul>
             <li>
               <img src="https://i.postimg.cc/t44fwsZX/1-v2vdf-Kq-D4-Mtm-TSg-NP0o5cg-removebg-preview.png" alt="" />
@@ -160,11 +157,8 @@ export const Skills = () => {
               </li>
             </ul>
           </div>
-        ) : (
-          <></>
-        )}
-        {skillname === "git-control" ? (
-          <div className={`git-control ${skillname === "git-control" ? "active" : ""
+  
+          <div className={`git-control ${skillname === "git-control" ? "active-tab" : "deactive-tab"
             }`}>
             <ul>
             <li>
@@ -177,9 +171,7 @@ export const Skills = () => {
               </li>
             </ul>
           </div>
-        ) : (
-          <></>
-        )}
+     
       </div>
     </div>
    </div>

@@ -3,6 +3,7 @@ import { About } from '../About/About'
 import { Banner } from '../Banner/Banner'
 import { Experience } from '../Experience/Experience'
 import { Skills } from '../Slills/Skills'
+import { PortFolio } from '../portfolio/PortFolio'
 
 export const Home = () => {
   return (
@@ -11,7 +12,7 @@ export const Home = () => {
       <About/>
       <Experience/>
       <Skills/>
-    
+      <PortFolio/>
       </div>
   )
 }
