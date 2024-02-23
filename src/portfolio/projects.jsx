@@ -3,9 +3,11 @@ export const porjects = [
     id: "1",
     name: "Mobile Bazar",
     title: "Ecommerce Website",
-    link: "",
+    live_link: "",
+    github_link:"",
     img: "https://i.postimg.cc/2826DsXm/a-MLka4qa-Ax-SEHarndz9hxj-1200-80.jpg",
     category:"full-stack",
+    technology:"Html,Css,Tailwindcss,Javascript,Reactjs,ExpressJs,Mongodb,Firebase,JWT,Vercel",
     description: "",
   },
   {

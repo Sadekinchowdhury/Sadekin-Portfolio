@@ -265,12 +265,11 @@
     align-items: center;
   }
 }
-@media (max-width: 500px) {
+@media (max-width: 599px) {
   .front-end ul,
   .back-end ul,
   .git-control ul {
     grid-template-columns: repeat(1, 1fr);
-    min-height: auto;
   }
 }
 

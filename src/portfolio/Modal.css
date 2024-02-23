@@ -1,0 +1,45 @@
+.my-modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 999;
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: all 0.3s;
+  padding: 0 20px;
+}
+.portfolio-modal {
+  max-width: 900px;
+  max-height: 900px;
+  background-color: white;
+  padding: 25px;
+  box-sizing: border-box;
+  position: relative;
+  z-index: 2;
+  transition: all 0.3s;
+  border-radius: 10px;
+}
+.close-modal-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0 0;
+}
+.close-modal-container svg {
+  height: 40px;
+  width: 40px;
+}
+.close-modal-container span {
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.close-modal-container span:last-child {
+  display: block;
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+}
