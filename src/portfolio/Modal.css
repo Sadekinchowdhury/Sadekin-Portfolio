@@ -13,8 +13,8 @@
   padding: 0 20px;
 }
 .portfolio-modal {
-  max-width: 900px;
-  max-height: 900px;
+  width: 90%;
+  max-width: 700px;
   background-color: white;
   padding: 25px;
   box-sizing: border-box;
@@ -42,4 +42,32 @@
   display: block;
   color: rgb(0, 0, 0);
   cursor: pointer;
+}
+.modal-project-details {
+  padding: 20px;
+  white-space: wrap;
+}
+.modal-project-content {
+  padding: 20px 0 10px;
+}
+.modal-project-details h6 {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 28px;
+}
+.modal-project-details h6 a {
+  color: rgb(48, 48, 255);
+  font-size: 16px;
+  font-weight: 500;
+}
+.modal-project-details p {
+  font-size: 16px;
+  font-weight: 400;
+  padding-top: 20px;
+}
+@media (max-width: 768px) {
+  .modal-project-details {
+    max-height: 410px;
+    overflow-y: auto;
+  }
 }

@@ -16,11 +16,16 @@ export const Modal = ({ open, setOpen, singledata, modaldata }) => {
           <></>
         )}
         {singledata === "details" ? (
-          <div>
+          <div className="modal-project-details">
              <img src={modaldata.img} alt="" />
-             <h4>{modaldata.name}</h4>
-             <h6>{modaldata.title}</h6>
-             <p>{modaldata.description}</p>
+            <div className="modal-project-content">
+            <h6>Nich: {modaldata.title}</h6>
+             <h6>Live Link: <a target="_blank" href= {modaldata.live_link}> {modaldata.live_link}</a> </h6>
+             <h6>Client Link: <a target="_blank" href= {modaldata.live_link}> {modaldata.client_link}</a></h6>
+             <h6>Server Link: <a target="_blank" href= {modaldata.live_link}> {modaldata.server_link}</a></h6>
+             <h6>Techhnology Use: <span>{modaldata.technology}</span></h6>
+             <p>{modaldata?.description}</p>
+            </div>
           </div>
         ) : (
           <></>
