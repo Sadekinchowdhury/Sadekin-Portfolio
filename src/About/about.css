@@ -55,7 +55,7 @@
 .about-content h2 {
   font-size: 45px;
   line-height: 48px;
-  font-weight: 600;
+  font-weight: 700;
   margin-bottom: 20px;
   color: white;
 }
@@ -66,7 +66,7 @@
   margin-bottom: 40px;
   color: white;
 }
-.about-content button a {
+/* .about-content button a {
   font-size: 16px;
   line-height: 16px;
   font-weight: bold;
@@ -75,7 +75,7 @@
   border: 1px transparent;
   color: white;
   background-color: #0788ff;
-}
+} */
 @media (max-width: 768px) {
   .about-container {
     flex-direction: column;
@@ -91,7 +91,11 @@
     flex-basis: 100%;
   }
   .about-content h2 {
-    font-size: 36px;
+    font-size: 30px;
     line-height: 40px;
+  }
+  .about-content p {
+    font-size: 16px;
+    line-height: 22px;
   }
 }

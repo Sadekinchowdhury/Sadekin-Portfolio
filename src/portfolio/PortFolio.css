@@ -52,9 +52,6 @@
   position: relative;
   overflow: hidden;
 }
-.portfolio-card:hover {
-  transform: translateY(-3px);
-}
 .card-img > img {
   width: 100%;
   min-height: 260px;
@@ -87,12 +84,17 @@
   justify-content: space-between;
 }
 .portfolio-project .card-content button {
-  padding: 2px 6px;
-  border: 1px solid;
-  border-radius: 5px;
   color: white;
   transform: translateX(150%);
   transition: all 0.3s;
+}
+.portfolio-project .card-content button::after {
+  content: "\2192";
+  transition: all 0.3s;
+  margin-left: 10px;
+}
+.portfolio-project .card-content button:hover {
+  color: #0788ff;
 }
 .portfolio-card:hover .card-content button {
   transform: translateX(0);
@@ -163,6 +165,13 @@
 @media (max-width: 599px) {
   .portfolio-project {
     grid-template-columns: repeat(1, 1fr);
+  }
+  .portfolio-content {
+    padding: 40px 20px;
+  }
+  .portfolio-top h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
   }
 }
 @media (max-width: 516px) {

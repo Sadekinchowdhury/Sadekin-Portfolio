@@ -225,6 +225,11 @@ body {
   }
 }
 @media (max-width: 599px) {
+  .image-object img {
+    padding: 10px;
+    max-height: 50px;
+    max-width: 50px;
+  }
   .banner-container {
     flex-direction: column-reverse;
     gap: 60px;
@@ -233,8 +238,8 @@ body {
     max-width: 320px;
     min-height: 320px;
   }
-  .typing-animation {
-    height: auto;
+  .logo a {
+    font-size: 24px;
   }
   .developr-rol {
     display: flex;
@@ -258,11 +263,20 @@ body {
     left: auto;
   }
   .banner-content h2 {
-    font-size: 35px;
+    font-size: 30px;
     line-height: 40px;
   }
   .banner-content h3 {
-    font-size: 25px;
-    line-height: 32px;
+    font-size: 22px;
+    line-height: 28px;
+  }
+  .typing-animation p {
+    font-size: 16px;
+  }
+  .banner-content span p {
+    font-size: 17px;
+  }
+  .banner-container {
+    padding: 30px 20px;
   }
 }

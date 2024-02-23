@@ -1,6 +1,6 @@
 .skills-main-container {
   max-width: 100vw;
-  background-color: #052545;
+  background-color: #004a65;
   position: relative;
   z-index: 0;
 }
@@ -13,11 +13,10 @@
 .skills-top h2 {
   font-size: 36px;
   line-height: 36px;
-  font-weight: 600;
+  font-weight: 700;
   text-align: center;
   padding: 0 0 20px;
   color: white;
-  text-transform: uppercase;
 }
 .skills-top span {
   display: block;
@@ -270,6 +269,12 @@
   .back-end ul,
   .git-control ul {
     grid-template-columns: repeat(1, 1fr);
+  }
+  .skills-container {
+    padding: 40px 20px;
+  }
+  .skills-top h2 {
+    font-size: 30px;
   }
 }
 

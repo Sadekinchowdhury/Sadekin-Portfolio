@@ -36,7 +36,6 @@ export const Skills = () => {
      <div className="skills-container">
       <div className="skills-top">
         <h2>My Skills</h2>
-        <span></span>
       </div>
       <div className="skills-category">
         <div
