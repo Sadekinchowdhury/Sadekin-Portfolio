@@ -7,7 +7,7 @@ button a {
   overflow: hidden;
   border-radius: 5px;
   display: inline-block;
-  z-index: 999;
+  z-index: 2;
   color: white;
   font-weight: 600;
   border: 1px solid #0788ff;
