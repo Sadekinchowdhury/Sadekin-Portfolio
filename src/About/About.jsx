@@ -1,5 +1,5 @@
 import React from "react";
-import CommonButton from "../Button/commonButton";
+import { HireMeButton } from "../Button/commonButton";
 import "./about.css";
 
 export const About = () => {
@@ -8,7 +8,7 @@ export const About = () => {
       <div className="about-me">
         <div className="about-container">
           <div className="about-img">
-            <img src="https://i.postimg.cc/tgmv776q/ruml.png" alt="" />
+            <img src="https://i.postimg.cc/gjytNH8y/Untitled-design-4.png" alt="" />
           </div>
           <div className="about-content">
             <span>About Me</span>
@@ -26,7 +26,7 @@ export const About = () => {
               contributing to your organization's success. Let's chat about how
               I can help!
             </p>
-            <CommonButton hireme="Hire me" />
+             <HireMeButton/>
           </div>
         </div>
       </div>

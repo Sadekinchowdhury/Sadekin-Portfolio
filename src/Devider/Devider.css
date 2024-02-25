@@ -1,0 +1,20 @@
+span.heading-devider {
+  display: block;
+  width: 255px;
+  max-width: 255px;
+  margin: 0 auto;
+  height: 1px;
+  background-color: rgb(255, 255, 255);
+  position: relative;
+}
+span.heading-devider::before {
+  content: "";
+  position: absolute;
+  height: 6px;
+  background-color: #0788ff;
+  width: 20%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 20px;
+}

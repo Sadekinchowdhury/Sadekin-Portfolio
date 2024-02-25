@@ -1,7 +1,7 @@
 import React from "react";
 import "./commonButton.css";
 
-const CommonButton = () => {
+export const  HireMeButton = () => {
   return (
     <>
       <button>
@@ -10,5 +10,14 @@ const CommonButton = () => {
     </>
   );
 };
+export const Submit = () => {
+  return (
+    <>
+      <button>
+        <a title="Hire me">Submit</a>
+      </button>
+    </>
+  );
+};
 
-export default CommonButton;
+ 

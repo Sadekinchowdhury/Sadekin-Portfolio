@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { Devider } from "../Devider/Devider";
 import "./Skills.css";
 export const Skills = () => {
 
@@ -36,8 +37,9 @@ export const Skills = () => {
      <div className="skills-container">
       <div className="skills-top">
         <h2>My Skills</h2>
+        <Devider/>
       </div>
-      <div className="skills-category">
+      {/* <div className="skills-category">
         <div
           style={{
             background: `conic-gradient(#93d234 ${value * 3.6}deg, #abb1a2 ${
@@ -90,7 +92,7 @@ export const Skills = () => {
           </h3>
           <h4>Reactjs</h4>
         </div>
-      </div>
+      </div> */}
 
       <div className="skills">
         <ul className="skills-name">

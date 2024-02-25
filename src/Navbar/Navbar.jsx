@@ -54,8 +54,6 @@ const Navbar = () => {
     },
   ];
 
-  console.log(active);
-
   return (
     <nav className="navbar">
       <div className="navbar-container">

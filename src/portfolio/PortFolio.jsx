@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { FaGithub } from 'react-icons/fa';
+import { Devider } from "../Devider/Devider";
 import { Modal } from "./Modal";
 import "./PortFolio.css";
 import { porjects } from "./projects";
@@ -36,6 +37,7 @@ export const PortFolio = () => {
       <div className="portfolio-content">
         <div className="portfolio-top">
           <h2>My Works</h2>
+          <Devider/>
           <ul>
             <li
               className={`${active === "All" ? "active" : ""}`}

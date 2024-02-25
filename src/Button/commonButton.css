@@ -10,7 +10,7 @@ button a {
   z-index: 999;
   color: white;
   font-weight: 600;
-  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  border: 1px solid #0788ff;
 }
 /* button a:hover {
   background-color: red;
@@ -27,7 +27,7 @@ button a::after {
   left: 0;
   z-index: -1;
 } */
-button a:hover::after {
+/* button a:hover::after {
   height: 100px;
   translate: 0 20px;
 }
@@ -46,13 +46,16 @@ button a:before {
 }
 button a:hover:before {
   height: 150px;
-}
+} */
 button a:hover {
   transform: translateY(-3px) scale(1.05);
+  background: transparent;
+  border: 1px solid #856565;
+  box-shadow: rgb(94 102 111) 0px 20px 30px -10px;
 }
-button a svg {
+/* button a svg {
   width: 20px;
   height: 20px;
   position: relative;
   z-index: 1;
-}
+} */

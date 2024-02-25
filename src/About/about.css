@@ -20,24 +20,14 @@
 }
 .about-img img {
   width: 100%;
-  max-width: 400px;
-  max-height: 400px;
   margin: 0 auto;
   display: block;
   object-fit: cover;
   border-radius: 20px;
+  border-top-right-radius: 311px;
+  border-top-left-radius: 311px;
 }
 
-.about-img::before {
-  content: "";
-  display: block;
-
-  padding-right: 20px;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  left: 0;
-}
 .about-content {
   flex-basis: 60%;
   padding: 20px;
@@ -64,18 +54,8 @@
   line-height: 28px;
   font-weight: 400;
   margin-bottom: 40px;
-  color: white;
+  color: rgb(255, 255, 255);
 }
-/* .about-content button a {
-  font-size: 16px;
-  line-height: 16px;
-  font-weight: bold;
-  padding: 14px 32px;
-  border-radius: 5px;
-  border: 1px transparent;
-  color: white;
-  background-color: #0788ff;
-} */
 @media (max-width: 768px) {
   .about-container {
     flex-direction: column;

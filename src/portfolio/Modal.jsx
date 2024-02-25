@@ -48,7 +48,7 @@ export const Modal = ({ open, setOpen, singledata, modaldata }) => {
               <g
                 id="Page-1"
                 stroke="none"
-                stroke-width="1"
+                sstrokeWidth="1"
                 fill="none"
                 fillRule="evenodd"
                 sketch:type="MSPage"
