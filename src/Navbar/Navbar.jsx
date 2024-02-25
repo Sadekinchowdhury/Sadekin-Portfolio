@@ -17,32 +17,32 @@ const Navbar = () => {
   const navMenu = [
     {
       name: "Home",
-      URL: "",
+      URL: "#home",
       icon: "",
     },
     {
       name: "About me",
-      URL: "",
+      URL: "#about-us",
       icon: "",
     },
     {
       name: "Projects",
-      URL: "",
+      URL: "#projects",
       icon: "",
     },
     {
       name: "Service",
-      URL: "",
+      URL: "#service",
       icon: "",
     },
     {
       name: "Contact",
-      URL: "",
+      URL: "#contact",
       icon: "",
     },
     {
       name: "Let's Talk",
-      URL: "",
+      URL: "#contact",
       icon: (
         <>
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="256" height="256">
@@ -69,7 +69,7 @@ const Navbar = () => {
                 <a
                   onClick={() => handleItemClick(index)}
                   className={`${active === `active-${index}` ? "active" : ""}`}
-                  href="#"
+                  href={item.URL}
                 >
                   {item.name}
                 </a>

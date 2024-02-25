@@ -33,7 +33,7 @@ export const PortFolio = () => {
 
   return (
     <>
-    <div className="portfolio-container">
+    <div id="projects" className="portfolio-container">
       <div className="portfolio-content">
         <div className="portfolio-top">
           <h2>My Works</h2>

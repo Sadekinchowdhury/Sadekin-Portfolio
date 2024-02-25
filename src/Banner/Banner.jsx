@@ -15,7 +15,7 @@ export const Banner = () => {
   ];
 
   return (
-    <div className="banner-container">
+    <div id="home" className="banner-container">
       <div className="banner-content">
         <div className="content">
           <div className="typing-animation">
@@ -75,7 +75,7 @@ export const Banner = () => {
                 </a>
               </span>
               <span>
-                <a title="Download CV" href="https://github.com/Sadekinchowdhury">
+                <a title="Download CV" href="https://drive.google.com/file/d/17PhoBzdCwDikRsBiQkZTnGF_HHNqlFuu/view">
                   <FaDownload />
                 </a>
               </span>

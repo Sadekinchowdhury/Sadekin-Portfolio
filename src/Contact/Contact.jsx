@@ -25,7 +25,7 @@ export const Contact = () => {
     console.log("Form submitted:", formData);
   };
   return (
-    <div className="contact-container">
+    <div id="contact" className="contact-container">
       <div className="contact-content-container">
         <h2>Contact</h2>
         <Devider/>
