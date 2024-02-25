@@ -88,8 +88,7 @@ export const Contact = () => {
           <div className="contact-info">
             <h2>Contact Info</h2>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-              ligula nulla tincidunt id faucibus sed suscipit feugiat.
+            Get in touch and let's bring your ideas to life! Whether you have a project in mind, want to collaborate, or just want to say hello, we're here for you. Your feedback and inquiries are always welcome. Reach out and let's create something amazing together!
             </p>
             <div className="contact-info-inner">
               <div>
