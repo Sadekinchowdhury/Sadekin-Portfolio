@@ -7,7 +7,7 @@
   left: 0;
   width: 100vw;
   height: 100vh;
-  z-index: 999;
+  z-index: 99;
   background-color: rgba(0, 0, 0, 0.5);
   transition: all 0.3s;
   padding: 0 20px;
@@ -65,9 +65,16 @@
   font-weight: 400;
   padding-top: 20px;
 }
+.modal-project-details {
+  max-height: 700px;
+  overflow-y: auto;
+}
 @media (max-width: 768px) {
   .modal-project-details {
     max-height: 410px;
     overflow-y: auto;
+  }
+  .portfolio-modal {
+    padding: 10px;
   }
 }
