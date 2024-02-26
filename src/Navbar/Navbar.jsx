@@ -87,11 +87,11 @@ const Navbar = () => {
       </div>
       {isOpen ? (
         <div className={`${isOpen ? 'mobile-menu-item':'mobile-menu-item-close'}`}>
-          <div className="logo">
+          {/* <div className="logo">
             <a href="#">
               Sade<span>k</span>
             </a>
-          </div>
+          </div> */}
           <ul>
             {navMenu.map((item, index) => (
               <li key={index}>

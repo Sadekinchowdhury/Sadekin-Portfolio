@@ -82,6 +82,16 @@
   display: none;
 }
 @media (max-width: 768px) {
+  .navbar {
+    background-color: transparent;
+  }
+  .navbar-container {
+    background-color: #051f36;
+    border: 1px solid #979292;
+  }
+  .navbar-container {
+    background-color: #051f36;
+  }
   .menu-toggle {
     display: block;
   }
@@ -104,9 +114,6 @@
     width: 100%;
     max-width: 70%;
     height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
     z-index: 1;
     transition: 0.3s;
     transform: translate(0px, 0px);
@@ -137,7 +144,7 @@
     border: 1px transparent;
     transition: all 0.3s;
     border-radius: 4px;
-    font-size: 16px;
+    font-size: 22px;
     font-weight: 600;
   }
   .mobile-menu-item ul li a.active {
@@ -156,7 +163,7 @@
     padding: 4px 16px;
     margin-top: 5px;
     border-radius: 30px;
-    font-size: 15px;
+    font-size: 22px;
     font-weight: 700;
     gap: 5px;
   }
