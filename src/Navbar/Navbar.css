@@ -86,6 +86,7 @@
     background-color: transparent;
   }
   .navbar-container {
+    padding: 20px;
     background-color: #051f36;
     border: 1px solid #979292;
   }
@@ -144,7 +145,7 @@
     border: 1px transparent;
     transition: all 0.3s;
     border-radius: 4px;
-    font-size: 22px;
+    font-size: 18px;
     font-weight: 600;
   }
   .mobile-menu-item ul li a.active {
@@ -163,7 +164,7 @@
     padding: 4px 16px;
     margin-top: 5px;
     border-radius: 30px;
-    font-size: 22px;
+    font-size: 18px;
     font-weight: 700;
     gap: 5px;
   }
